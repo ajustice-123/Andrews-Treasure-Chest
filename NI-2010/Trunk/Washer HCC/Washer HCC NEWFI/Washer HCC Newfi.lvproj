@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="16008000">
+<Project Type="Project" LVVersion="18008000">
 	<Property Name="varPersistentID:{00116058-B2DA-4483-B4EE-BE9D06C57F1F}" Type="Ref">/My Computer/Test Lib.lvlib/Current Location/Filepath 24</Property>
 	<Property Name="varPersistentID:{00177DD7-4FF5-4ACA-8934-4D8210699442}" Type="Ref">/My Computer/Test Lib.lvlib/Current Location/Filepath 13</Property>
 	<Property Name="varPersistentID:{015D7FDB-02EE-444B-BFB9-EB72086AD7A8}" Type="Ref">/My Computer/Test Lib.lvlib/Current Location/Filepath 47</Property>
@@ -246,6 +246,7 @@
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="Test Lib.lvlib" Type="Library" URL="../Test Lib.lvlib"/>
+		<Item Name="Create Filename.vi" Type="VI" URL="../../../Washer DOE/Create Filename.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Add State(s) to Queue__jki_lib_state_machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Add State(s) to Queue__jki_lib_state_machine.vi"/>
@@ -257,7 +258,7 @@
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="Open File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Open File+.vi"/>
-				<Item Name="Parse State Queue__JKI_lib_State_Machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Parse State Queue__JKI_lib_State_Machine.vi"/>
+				<Item Name="Parse State Queue__jki_lib_state_machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Parse State Queue__jki_lib_state_machine.vi"/>
 				<Item Name="Read File+ (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read File+ (string).vi"/>
 				<Item Name="Read From Spreadsheet File (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read From Spreadsheet File (DBL).vi"/>
 				<Item Name="Read From Spreadsheet File (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read From Spreadsheet File (I64).vi"/>
@@ -321,7 +322,6 @@
 				<Item Name="LVDateTimeRec.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVDateTimeRec.ctl"/>
 				<Item Name="NI_report.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Utility/NIReport.llb/NI_report.lvclass"/>
 				<Item Name="NI_ReportGenerationCore.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/NIReport.llb/NI_ReportGenerationCore.lvlib"/>
-				<Item Name="NI_HTML.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Utility/NIReport.llb/HTML/NI_HTML.lvclass"/>
 				<Item Name="Write JPEG File.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Write JPEG File.vi"/>
 				<Item Name="imagedata.ctl" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/imagedata.ctl"/>
 				<Item Name="Check File Permissions.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Check File Permissions.vi"/>
@@ -348,13 +348,6 @@
 				<Item Name="Read Registry Value DWORD.vi" Type="VI" URL="/&lt;vilib&gt;/registry/registry.llb/Read Registry Value DWORD.vi"/>
 				<Item Name="Registry Simplify Data Type.vi" Type="VI" URL="/&lt;vilib&gt;/registry/registry.llb/Registry Simplify Data Type.vi"/>
 				<Item Name="Read Registry Value Simple U32.vi" Type="VI" URL="/&lt;vilib&gt;/registry/registry.llb/Read Registry Value Simple U32.vi"/>
-				<Item Name="Create ActiveX Event Queue.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/ax-events.llb/Create ActiveX Event Queue.vi"/>
-				<Item Name="Wait types.ctl" Type="VI" URL="/&lt;vilib&gt;/Platform/ax-events.llb/Wait types.ctl"/>
-				<Item Name="Create Error Clust.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/ax-events.llb/Create Error Clust.vi"/>
-				<Item Name="Wait On ActiveX Event.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/ax-events.llb/Wait On ActiveX Event.vi"/>
-				<Item Name="EventData.ctl" Type="VI" URL="/&lt;vilib&gt;/Platform/ax-events.llb/EventData.ctl"/>
-				<Item Name="OccFireType.ctl" Type="VI" URL="/&lt;vilib&gt;/Platform/ax-events.llb/OccFireType.ctl"/>
-				<Item Name="Destroy ActiveX Event Queue.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/ax-events.llb/Destroy ActiveX Event Queue.vi"/>
 				<Item Name="Close Registry Key.vi" Type="VI" URL="/&lt;vilib&gt;/registry/registry.llb/Close Registry Key.vi"/>
 				<Item Name="NI_Standard Report.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Utility/NIReport.llb/Standard Report/NI_Standard Report.lvclass"/>
 				<Item Name="Read PNG File.vi" Type="VI" URL="/&lt;vilib&gt;/picture/png.llb/Read PNG File.vi"/>
@@ -366,7 +359,6 @@
 				<Item Name="Write BMP Data To Buffer.vi" Type="VI" URL="/&lt;vilib&gt;/picture/bmp.llb/Write BMP Data To Buffer.vi"/>
 				<Item Name="Calc Long Word Padded Width.vi" Type="VI" URL="/&lt;vilib&gt;/picture/bmp.llb/Calc Long Word Padded Width.vi"/>
 				<Item Name="Flip and Pad for Picture Control.vi" Type="VI" URL="/&lt;vilib&gt;/picture/bmp.llb/Flip and Pad for Picture Control.vi"/>
-				<Item Name="Color to RGB.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/Color to RGB.vi"/>
 				<Item Name="Built App File Layout.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/Built App File Layout.vi"/>
 				<Item Name="Get LV Class Default Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Default Value.vi"/>
 				<Item Name="NI_Excel.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Utility/NIReport.llb/Excel/NI_Excel.lvclass"/>
@@ -409,8 +401,20 @@
 				<Item Name="Read Lines From File (with error IO).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Lines From File (with error IO).vi"/>
 				<Item Name="Read Delimited Spreadsheet (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (I64).vi"/>
 				<Item Name="Read Delimited Spreadsheet (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (string).vi"/>
-				<Item Name="LV70DateRecToTimeStamp.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/LV70DateRecToTimeStamp.vi"/>
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
+				<Item Name="Create ActiveX Event Queue.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/ax-events.llb/Create ActiveX Event Queue.vi"/>
+				<Item Name="Wait types.ctl" Type="VI" URL="/&lt;vilib&gt;/Platform/ax-events.llb/Wait types.ctl"/>
+				<Item Name="Create Error Clust.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/ax-events.llb/Create Error Clust.vi"/>
+				<Item Name="Wait On ActiveX Event.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/ax-events.llb/Wait On ActiveX Event.vi"/>
+				<Item Name="EventData.ctl" Type="VI" URL="/&lt;vilib&gt;/Platform/ax-events.llb/EventData.ctl"/>
+				<Item Name="OccFireType.ctl" Type="VI" URL="/&lt;vilib&gt;/Platform/ax-events.llb/OccFireType.ctl"/>
+				<Item Name="Destroy ActiveX Event Queue.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/ax-events.llb/Destroy ActiveX Event Queue.vi"/>
+				<Item Name="LV70DateRecToTimeStamp.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/LV70DateRecToTimeStamp.vi"/>
+				<Item Name="cfis_Replace Percent Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/cfis_Replace Percent Code.vi"/>
+				<Item Name="cfis_Reverse Scan From String For Integer.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/cfis_Reverse Scan From String For Integer.vi"/>
+				<Item Name="cfis_Get File Extension Without Changing Case.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/cfis_Get File Extension Without Changing Case.vi"/>
+				<Item Name="cfis_Split File Path Into Three Parts.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/cfis_Split File Path Into Three Parts.vi"/>
+				<Item Name="Create File with Incrementing Suffix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Create File with Incrementing Suffix.vi"/>
 			</Item>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -500,6 +504,20 @@
 			<Item Name="IND560 Serial FGV Filter.vi" Type="VI" URL="../../../../Drivers/IND560 Scale Monitor/Support VIs/IND560 Serial FGV Filter.vi"/>
 			<Item Name="IND560 Serial Parse.vi" Type="VI" URL="../../../../Drivers/IND560 Scale Monitor/Support VIs/IND560 Serial Parse.vi"/>
 			<Item Name="IND560 Serial Close.vi" Type="VI" URL="../../../../Drivers/IND560 Scale Monitor/Support VIs/IND560 Serial Close.vi"/>
+			<Item Name="ICS425.vi" Type="VI" URL="../../../../Drivers/Mettler Toledo ICS425/ICS425.vi"/>
+			<Item Name="ICS245_Commands.ctl" Type="VI" URL="../../../../Drivers/Mettler Toledo ICS425/Type Definitions/ICS245_Commands.ctl"/>
+			<Item Name="ICS425 Initialize.vi" Type="VI" URL="../../../../Drivers/Mettler Toledo ICS425/SubVIs/ICS425 Initialize.vi"/>
+			<Item Name="ICS425 Read Write.vi" Type="VI" URL="../../../../Drivers/Mettler Toledo ICS425/SubVIs/ICS425 Read Write.vi"/>
+			<Item Name="ICS425 Data Parse.vi" Type="VI" URL="../../../../Drivers/Mettler Toledo ICS425/SubVIs/ICS425 Data Parse.vi"/>
+			<Item Name="ICS425 Close.vi" Type="VI" URL="../../../../Drivers/Mettler Toledo ICS425/SubVIs/ICS425 Close.vi"/>
+			<Item Name="NI_HTML.lvclass" Type="LVClass" URL="../../../../../../Users/515115679/Desktop/NI_Reports_Debug/NI_HTML.lvclass"/>
+			<Item Name="UTILITY General Time Header.vi" Type="VI" URL="../../../Utility/UTILITY General Time Header.vi"/>
+			<Item Name="UTILITY Elapsed Time General Info.vi" Type="VI" URL="../../../Utility/UTILITY Elapsed Time General Info.vi"/>
+			<Item Name="UTILITY Elapsed Time.vi" Type="VI" URL="../../../Utility/UTILITY Elapsed Time.vi"/>
+			<Item Name="UTILITY Create Plot Array.vi" Type="VI" URL="../../../Utility/UTILITY Create Plot Array.vi"/>
+			<Item Name="UTILITY Delete Zeros.vi" Type="VI" URL="../../../Utility/UTILITY Delete Zeros.vi"/>
+			<Item Name="UTILITY Extract Plot Data.vi" Type="VI" URL="../../../Utility/UTILITY Extract Plot Data.vi"/>
+			<Item Name="UTILITY MultiPlot.vi" Type="VI" URL="../../../Utility/UTILITY MultiPlot.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Newfi" Type="EXE">
@@ -733,52 +751,34 @@
 				<Property Name="DistPart[15].productName" Type="Str">NI DataSocket 5.3</Property>
 				<Property Name="DistPart[15].upgradeCode" Type="Str">{81A7E53E-9524-41CE-90D3-7DD3D90B6C58}</Property>
 				<Property Name="DistPart[2].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[2].productID" Type="Str">{448569AE-EE10-456F-B3A6-CA1D862E2E9C}</Property>
-				<Property Name="DistPart[2].productName" Type="Str">NI LabVIEW Runtime 2016</Property>
+				<Property Name="DistPart[2].productID" Type="Str">{FEB8324C-1913-4673-9B2E-89F3D074E0BD}</Property>
+				<Property Name="DistPart[2].productName" Type="Str">NI LabVIEW Runtime 2018</Property>
 				<Property Name="DistPart[2].SoftDep[0].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[2].SoftDep[0].productName" Type="Str">NI LabVIEW Runtime 2016 Non-English Support.</Property>
-				<Property Name="DistPart[2].SoftDep[0].upgradeCode" Type="Str">{72AEEB03-DF6A-4C90-B44E-22B1E74CF14F}</Property>
+				<Property Name="DistPart[2].SoftDep[0].productName" Type="Str">NI ActiveX Container</Property>
+				<Property Name="DistPart[2].SoftDep[0].upgradeCode" Type="Str">{1038A887-23E1-4289-B0BD-0C4B83C6BA21}</Property>
 				<Property Name="DistPart[2].SoftDep[1].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[2].SoftDep[1].productName" Type="Str">NI ActiveX Container</Property>
-				<Property Name="DistPart[2].SoftDep[1].upgradeCode" Type="Str">{1038A887-23E1-4289-B0BD-0C4B83C6BA21}</Property>
-				<Property Name="DistPart[2].SoftDep[10].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[2].SoftDep[10].productName" Type="Str">NI VC2015 Runtime</Property>
-				<Property Name="DistPart[2].SoftDep[10].upgradeCode" Type="Str">{D42E7BAE-6589-4570-B6A3-3E28889392E7}</Property>
-				<Property Name="DistPart[2].SoftDep[11].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[2].SoftDep[11].productName" Type="Str">NI mDNS Responder 14.0</Property>
-				<Property Name="DistPart[2].SoftDep[11].upgradeCode" Type="Str">{9607874B-4BB3-42CB-B450-A2F5EF60BA3B}</Property>
-				<Property Name="DistPart[2].SoftDep[12].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[2].SoftDep[12].productName" Type="Str">NI Deployment Framework 2016</Property>
-				<Property Name="DistPart[2].SoftDep[12].upgradeCode" Type="Str">{838942E4-B73C-492E-81A3-AA1E291FD0DC}</Property>
-				<Property Name="DistPart[2].SoftDep[13].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[2].SoftDep[13].productName" Type="Str">NI Error Reporting 2016</Property>
-				<Property Name="DistPart[2].SoftDep[13].upgradeCode" Type="Str">{42E818C6-2B08-4DE7-BD91-B0FD704C119A}</Property>
+				<Property Name="DistPart[2].SoftDep[1].productName" Type="Str">NI Logos 18.0</Property>
+				<Property Name="DistPart[2].SoftDep[1].upgradeCode" Type="Str">{5E4A4CE3-4D06-11D4-8B22-006008C16337}</Property>
 				<Property Name="DistPart[2].SoftDep[2].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[2].SoftDep[2].productName" Type="Str">NI System Web Server 16.0</Property>
-				<Property Name="DistPart[2].SoftDep[2].upgradeCode" Type="Str">{FCF64B73-B7D4-4971-8F11-24BAF7CC3E6C}</Property>
+				<Property Name="DistPart[2].SoftDep[2].productName" Type="Str">NI TDM Streaming 18.0</Property>
+				<Property Name="DistPart[2].SoftDep[2].upgradeCode" Type="Str">{4CD11BE6-6BB7-4082-8A27-C13771BC309B}</Property>
 				<Property Name="DistPart[2].SoftDep[3].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[2].SoftDep[3].productName" Type="Str">Math Kernel Libraries</Property>
-				<Property Name="DistPart[2].SoftDep[3].upgradeCode" Type="Str">{F34FFCA8-C4CB-47CC-8B81-C4E95E227355}</Property>
+				<Property Name="DistPart[2].SoftDep[3].productName" Type="Str">NI VC2010MSMs</Property>
+				<Property Name="DistPart[2].SoftDep[3].upgradeCode" Type="Str">{EFBA6F9E-F934-4BD7-AC51-60CCA480489C}</Property>
 				<Property Name="DistPart[2].SoftDep[4].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[2].SoftDep[4].productName" Type="Str">NI Logos 5.8</Property>
-				<Property Name="DistPart[2].SoftDep[4].upgradeCode" Type="Str">{5E4A4CE3-4D06-11D4-8B22-006008C16337}</Property>
+				<Property Name="DistPart[2].SoftDep[4].productName" Type="Str">NI VC2015 Runtime</Property>
+				<Property Name="DistPart[2].SoftDep[4].upgradeCode" Type="Str">{D42E7BAE-6589-4570-B6A3-3E28889392E7}</Property>
 				<Property Name="DistPart[2].SoftDep[5].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[2].SoftDep[5].productName" Type="Str">NI TDM Streaming 16.0</Property>
-				<Property Name="DistPart[2].SoftDep[5].upgradeCode" Type="Str">{4CD11BE6-6BB7-4082-8A27-C13771BC309B}</Property>
+				<Property Name="DistPart[2].SoftDep[5].productName" Type="Str">NI mDNS Responder 17.0</Property>
+				<Property Name="DistPart[2].SoftDep[5].upgradeCode" Type="Str">{9607874B-4BB3-42CB-B450-A2F5EF60BA3B}</Property>
 				<Property Name="DistPart[2].SoftDep[6].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[2].SoftDep[6].productName" Type="Str">NI LabVIEW Web Server 2016</Property>
-				<Property Name="DistPart[2].SoftDep[6].upgradeCode" Type="Str">{6A61A967-C04E-47A1-8D08-DF27332A78AB}</Property>
+				<Property Name="DistPart[2].SoftDep[6].productName" Type="Str">NI Deployment Framework 2018</Property>
+				<Property Name="DistPart[2].SoftDep[6].upgradeCode" Type="Str">{838942E4-B73C-492E-81A3-AA1E291FD0DC}</Property>
 				<Property Name="DistPart[2].SoftDep[7].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[2].SoftDep[7].productName" Type="Str">NI LabVIEW Real-Time NBFifo 2016</Property>
-				<Property Name="DistPart[2].SoftDep[7].upgradeCode" Type="Str">{718F68F2-14F0-4656-A29E-617F12A7343B}</Property>
-				<Property Name="DistPart[2].SoftDep[8].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[2].SoftDep[8].productName" Type="Str">NI VC2008MSMs</Property>
-				<Property Name="DistPart[2].SoftDep[8].upgradeCode" Type="Str">{FDA3F8BB-BAA9-45D7-8DC7-22E1F5C76315}</Property>
-				<Property Name="DistPart[2].SoftDep[9].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[2].SoftDep[9].productName" Type="Str">NI VC2010MSMs</Property>
-				<Property Name="DistPart[2].SoftDep[9].upgradeCode" Type="Str">{EFBA6F9E-F934-4BD7-AC51-60CCA480489C}</Property>
-				<Property Name="DistPart[2].SoftDepCount" Type="Int">14</Property>
-				<Property Name="DistPart[2].upgradeCode" Type="Str">{E7DBF016-365A-40B6-9526-B4D0B4830F51}</Property>
+				<Property Name="DistPart[2].SoftDep[7].productName" Type="Str">NI Error Reporting 2018</Property>
+				<Property Name="DistPart[2].SoftDep[7].upgradeCode" Type="Str">{42E818C6-2B08-4DE7-BD91-B0FD704C119A}</Property>
+				<Property Name="DistPart[2].SoftDepCount" Type="Int">8</Property>
+				<Property Name="DistPart[2].upgradeCode" Type="Str">{3B195EBF-4A09-46E6-8EAD-931568C1344C}</Property>
 				<Property Name="DistPart[3].flavorID" Type="Str">_full_</Property>
 				<Property Name="DistPart[3].productID" Type="Str">{B85FCBAE-C431-488D-88F5-2AB59F1528E2}</Property>
 				<Property Name="DistPart[3].productName" Type="Str">NI Launcher</Property>
@@ -817,7 +817,7 @@
 				<Property Name="INST_productName" Type="Str">Washer HCC Newfi</Property>
 				<Property Name="INST_productVersion" Type="Str">1.0.4</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
-				<Property Name="InstSpecVersion" Type="Str">16008010</Property>
+				<Property Name="InstSpecVersion" Type="Str">18008007</Property>
 				<Property Name="MSI_arpCompany" Type="Str">General Electric</Property>
 				<Property Name="MSI_distID" Type="Str">{3D51AE20-44F7-4D12-A8AD-B3D624FBBCC3}</Property>
 				<Property Name="MSI_osCheck" Type="Int">0</Property>
@@ -878,6 +878,48 @@
 				<Property Name="TgtF_productName" Type="Str">HCC Get Application Directory</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{A12B4D04-FBA4-4662-BCFB-D307B92838D7}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">HCC Get Application Directory.exe</Property>
+			</Item>
+			<Item Name="CurrentOnly" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{6D7711E6-642B-4435-967C-023BF1F944B5}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{FF80981E-9CD5-40C4-82D0-C0FE5F6FF12C}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="App_waitDebugging" Type="Bool">true</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{865EAE74-285A-4CF2-99F2-43E8C839935D}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">CurrentOnly</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/CurrentOnly</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{1C439E90-624E-44EE-A183-4D1C8AEF97C3}</Property>
+				<Property Name="Bld_version.build" Type="Int">4</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">CurrentOnly.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/CurrentOnly/CurrentOnly.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/CurrentOnly/data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{A4F67946-6187-4FD3-9A28-4358BAF73CBD}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main/CurrentCollectOnly.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_companyName" Type="Str">GE Appliances</Property>
+				<Property Name="TgtF_enableDebugging" Type="Bool">true</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">CurrentOnly</Property>
+				<Property Name="TgtF_internalName" Type="Str">CurrentOnly</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2018 GE Appliances</Property>
+				<Property Name="TgtF_productName" Type="Str">CurrentOnly</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{0F02813F-023B-4691-9F34-F735BD0412FC}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">CurrentOnly.exe</Property>
+				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
 		</Item>
 	</Item>
