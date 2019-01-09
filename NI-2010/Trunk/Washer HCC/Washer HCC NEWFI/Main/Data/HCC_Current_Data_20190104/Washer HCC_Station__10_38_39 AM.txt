@@ -1,0 +1,2 @@
+System Date,System Time,Elapsed Time (sec),Software Elapsed Time (sec)
+01/04/2019,10:38:34.641,0.000000,0.000000

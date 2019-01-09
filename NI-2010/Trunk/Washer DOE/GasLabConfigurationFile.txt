@@ -1,0 +1,44 @@
+Meter 1 Type,
+Meter 1 Size(SLPM),
+Meter 1 Accuracy Reading,
+Meter 1 Accuracy Full Scale,
+Meter 1 Present (TRUE/FALSE),
+Meter 2 Type,
+Meter 2 Size(SLPM),
+Meter 2 Accuracy Reading,
+Meter 2 Accuracy Full Scale,
+Meter 2 Present (TRUE/FALSE),
+Meter 3 Type,
+Meter 3 Size(SLPM),
+Meter 3 Accuracy Reading,
+Meter 3 Accuracy Full Scale,
+Meter 3 Present (TRUE/FALSE),
+Meter 4 Type,
+Meter 4 Size(SLPM),
+Meter 4 Accuracy Reading,
+Meter 4 Accuracy Full Scale,
+Meter 4 Present (TRUE/FALSE),
+Meter 5 Type,
+Meter 5 Size(SLPM),
+Meter 5 Accuracy Reading,
+Meter 5 Accuracy Full Scale,
+Meter 5 Present (TRUE/FALSE),
+Meter 6 Type,
+Meter 6 Size(SLPM),
+Meter 6 Accuracy Reading,
+Meter 6 Accuracy Full Scale,
+Meter 6 Present (TRUE/FALSE),
+USE RS232 Data Collection,TRUE
+Station 1 COM Alias,Station1
+Station 2 COM Alias,Station2
+Station 3 COM Alias,Station3
+Station 4 COM Alias,Station4
+Station 5 COM Alias,Station5
+Station 6 COM Alias,Station6
+Heating Value Bank 1(BTU/ft³),990
+Heating Value Bank 2 (BTU/ft³),2450
+Heating Value Bank 3 (BTU/ft³),990
+Bank 1 Set STP Register (1atm@60F) - TRUE/FALSE,FALSE
+Bank 2 Set STP Register (1atm@60F) - TRUE/FALSE,FALSE
+Bank 3 Set STP Register (1atm@60F) - TRUE/FALSE,FALSE
+Use Auto Tab Switching,FALSE
